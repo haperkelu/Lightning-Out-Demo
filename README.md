@@ -11,7 +11,7 @@ Create below Lightning application in your Salesforce instance and name it as **
 `</aura:application>`
 
 ### Step 2
-Create Connected App in your Salesforce instance with callback URL - `http://localhost:8080/oauthcallback.html`
+Create Connected App in your Salesforce instance with callback URL - `https://localhost:8081/oauthcallback.html`
 Copy Consumer Key created in connected app and update clientId variable defined in [OAuth.js](/Lightning-Out-Demo/blob/master/client/js/OAuth.js) file.
 
 ### Step 3 
