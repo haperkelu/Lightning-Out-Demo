@@ -1,16 +1,18 @@
 # Steps to run
 ### Step 1
+Create account list as per https://trailhead.salesforce.com/en/content/learn/projects/slds-lightning-components-workshop/slds-lc-4
+
 Create below Lightning application in your Salesforce instance and name it as **LightningOutDemo**
 
 `<aura:application access="Global" extends="ltng:outApp">`
 
-`<aura:dependency resource="forceChatter:feed" type="COMPONENT" />`
+`<c:AccountList />`
 
 `</aura:application>`
 
 ### Step 2
-Create Connected App in your Salesforce instance with callback URL - `https://localhost:8081/`
-Copy consumer secret created in connected app and update clientId variable defined in [OAuth.js](https://github.com/JitendraZaa/Lightning-Out-Demo/blob/master/client/js/OAuth.js) file.
+Create Connected App in your Salesforce instance with callback URL - `http://localhost:8080/oauthcallback.html`
+Copy Consumer Key created in connected app and update clientId variable defined in [OAuth.js](/Lightning-Out-Demo/blob/master/client/js/OAuth.js) file.
 
 ### Step 3 
 Save `https://localhost:8081` in **CORS** setting of Salesforce.
